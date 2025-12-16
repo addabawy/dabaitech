@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dabai Tech | Empowering Youth Onsite & Online</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #ffffff;
+      color: #333;
+    }
+
+    /* HEADER */
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #ffffff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+
+    header h2 { color: #4CAF50; }
+
+    nav a {
+      margin-left: 1rem;
+      text-decoration: none;
+      color: #333;
+      font-weight: 600;
+    }
+
+    nav a:hover { color: #4CAF50; }
+
+    /* HERO */
+    .hero {
+      height: 100vh;
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('hero.jpg');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      padding: 2rem;
+    }
+
+    .hero h1 { font-size: 3rem; margin-bottom: 1rem; }
+    .hero p { font-size: 1.2rem; margin-bottom: 2rem; }
+
+    .btn {
+      padding: 0.8rem 1.8rem;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      margin: 0.5rem;
+      display: inline-block;
+    }
+
+    .primary-btn { background: #4CAF50; color: #fff; }
+    .secondary-btn { border: 2px solid #fff; color: #fff; }
+
+    /* SECTIONS */
+    section {
+      padding: 5rem 2rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    section h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #4CAF50;
+    }
+
+    /* SERVICES */
+    .services, .programs, .why-container, .schedule-table {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
+    }
+
+    .service-card, .program-card, .why-card, .schedule-card {
+      background: #f9f9f9;
+      padding: 2rem;
+      border-radius: 18px;
+      text-align: center;
+    }
+
+    .service-icon {
+      font-size: 3rem;
+      color: #4CAF50;
+      margin-bottom: 1rem;
+    }
+
+    /* TAG */
+    .tag {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.3rem 0.8rem;
+      background: #e8f5e9;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      color: #2e7d32;
+    }
+
+    /* COMMITMENT */
+    .commitment-section {
+      background: #f1f8f4;
+      padding: 4rem 2rem;
+      text-align: center;
+      border-radius: 25px;
+    }
+
+    .commitment-points {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+      font-weight: 600;
+      color: #2e7d32;
+    }
+
+    /* REGISTRATION */
+    .register-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    input, select, textarea {
+      padding: 0.9rem;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+    }
+
+    /* WHATSAPP */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background: #25D366;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      text-decoration: none;
+      z-index: 1000;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #f1f1f1;
+      margin-top: 4rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h2>Dabai Tech</h2>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#programs">Programs</a>
+    <a href="#register">Register</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div>
+    <h1>Empowering Youth Onsite & Online</h1>
+    <p>Building skills, confidence, and digital mindset</p>
+    <a href="#programs" class="btn primary-btn">Our Programs</a>
+    <a href="#contact" class="btn secondary-btn">Contact Us</a>
+  </div>
+</section>
+
+<section id="about">
+  <h2>About Dabai Tech</h2>
+  <p>Dabai Tech empowers youth with practical digital and entrepreneurial skills through onsite and online training.</p>
+</section>
+
+<section id="services">
+  <h2>Our Services</h2>
+  <div class="services">
+    <div class="service-card"><i class="fas fa-laptop-code service-icon"></i><h3>Digital Skills</h3></div>
+    <div class="service-card"><i class="fas fa-chalkboard-teacher service-icon"></i><h3>Online Learning</h3></div>
+    <div class="service-card"><i class="fas fa-briefcase service-icon"></i><h3>Entrepreneurship</h3></div>
+  </div>
+</section>
+
+<section id="programs">
+  <h2>Programs & Trainings</h2>
+  <div class="programs">
+    <div class="program-card"><h3>Computer Basics</h3><span class="tag">Onsite & Online</span></div>
+    <div class="program-card"><h3>Web Development</h3><span class="tag">Onsite & Online</span></div>
+    <div class="program-card"><h3>Programming</h3><span class="tag">Onsite & Online</span></div>
+  </div>
+</section>
+
+<section class="commitment-section">
+  <h2>Our Commitment</h2>
+  <p>We are committed to quality, honesty, and empowering youth with real digital skills.</p>
+  <div class="commitment-points">
+    <div>✔ Practical Training</div>
+    <div>✔ Youth Empowerment</div>
+    <div>✔ Community Impact</div>
+  </div>
+</section>
+
+<section id="register">
+  <h2>Training Registration</h2>
+  <form class="register-form">
+    <input type="text" placeholder="Full Name" required>
+    <input type="tel" placeholder="Phone Number" required>
+    <select required>
+      <option value="">Select Program</option>
+      <option>Computer Basics</option>
+      <option>Web Development</option>
+      <option>Programming</option>
+    </select>
+    <button class="btn primary-btn">Submit</button>
+  </form>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p>Email: dabai.tech@gmail.com | Phone: +234 907 478 3210</p>
+</section>
+
+<a href="https://wa.me/2349074783210" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
+
+<footer>
+  &copy; 2025 Dabai Tech. All Rights Reserved.
+</footer>
+
+</body>
+</html>
